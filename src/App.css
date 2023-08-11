@@ -1,0 +1,21 @@
+#homebtn{
+    text-decoration: none;
+    color: black;
+}
+.add{
+    text-decoration: none;
+    color: black;
+}
+header{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    padding-top: 15px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+header:hover{
+    box-shadow: none;
+    border-bottom: 1px solid black;
+}
