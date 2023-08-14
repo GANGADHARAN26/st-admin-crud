@@ -1,5 +1,5 @@
 import { profilesUrl} from "./Config";
-
+import axios from "axios"
 //posting profile data to mockapi
 export const createprofile=async(profileData) => {
     const response = await fetch (`${profilesUrl}/profiles`,
@@ -21,7 +21,11 @@ export const getProfiles =async() => {
     const profile = await response.json();
     return profile;
 }
-
+//  const axiosgetProfiles =async() => {
+//   const {data} = await axios.get(`${profilesUrl}/profiles`);
+//   console.log(data)
+// }
+// axiosgetProfiles();
 
 //getting individual profile data 
 export const getProfile = async (profileId) => {
